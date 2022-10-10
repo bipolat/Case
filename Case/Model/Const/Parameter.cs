@@ -1,0 +1,3 @@
+﻿namespace Case.Model.Const
+{
+}

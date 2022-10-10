@@ -1,0 +1,20 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @{
+        if (ViewBag.Categories != null)
+        {
+            foreach (var item in (List<Case.Model.Categorie>)ViewBag.Categories)
+            {
+                <li>@Html.ActionLink(item.Name, "Category", new { Id = item.Id })</li>
+            }
+        }
+    }
+</body>
+</html>
